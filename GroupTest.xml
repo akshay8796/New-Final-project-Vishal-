@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <groups>
+   <run>
+    <include name="Regression"></include>
+   </run>
+</groups>
+
+<listeners>
+		<listener class-name="Utilities.ExtentReportManager"/>
+</listeners>
+
+  <test thread-count="5" name="Test">
+  
+   <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="Testcases.BaseClassTest"/>
+      <class name="Testcases.Test001PageTitle"/>
+      <class name="Testcases.Test004LoginDataprovider"/>
+      <class name="Testcases.Test003_groupList"/>
+      <class name="Testcases.Test002CurrentURL"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
