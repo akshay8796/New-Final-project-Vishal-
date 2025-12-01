@@ -7,34 +7,20 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="Testcases.Test003_groupList">
+      <class name="Testcases.TestFaceBook01Title">
         <methods>
           <include name="Setup"/>
-          <include name="test003_GrouListValidation"/>
+          <include name="testTitleFacebook"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Testcases.Test003_groupList -->
-      <class name="Testcases.Test001PageTitle">
+      </class> <!-- Testcases.TestFaceBook01Title -->
+      <class name="Testcases.TestFacebook02">
         <methods>
           <include name="Setup"/>
-          <include name="TestPageTitle"/>
+          <include name="testFacebookProperty"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Testcases.Test001PageTitle -->
-      <class name="Testcases.Test002CurrentURL">
-        <methods>
-          <include name="Setup"/>
-          <include name="TestURL"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Testcases.Test002CurrentURL -->
-      <class name="Testcases.Test004LoginDataprovider">
-        <methods>
-          <include name="Setup"/>
-          <include name="test_01" invocation-numbers="0 1 2 3 4"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Testcases.Test004LoginDataprovider -->
+      </class> <!-- Testcases.TestFacebook02 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
